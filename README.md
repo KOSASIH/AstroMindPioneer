@@ -301,3 +301,45 @@ print(markdown_table)
 The code above defines a Python function `calculate_distance` that calculates the distance between two celestial bodies based on their positions. It then defines another function `calculate_distances` that calculates the distances between each pair of celestial bodies in a given list. Finally, it defines a function `generate_markdown_table` that generates a markdown table with the distances.
 
 To use the code, you can provide a list of celestial bodies with their positions to the `calculate_distances` function. It will return a 2D list of distances. You can then pass this list to the `generate_markdown_table` function to obtain a markdown table representation of the distances.
+
+# Celestial Body Generator
+
+```python
+import random
+
+class CelestialBodyGenerator:
+    def __init__(self):
+        self.generated_bodies = []
+
+    def create_bodies(self, num_bodies):
+        for _ in range(num_bodies):
+            mass = random.uniform(1e20, 1e30)  # Random mass between 1e20 and 1e30 kg
+            radius = random.uniform(1e5, 1e7)  # Random radius between 1e5 and 1e7 meters
+            position = (random.uniform(-1e9, 1e9), random.uniform(-1e9, 1e9))  # Random (x, y) position between -1e9 and 1e9
+
+            body = {
+                'mass': mass,
+                'radius': radius,
+                'position': position
+            }
+            self.generated_bodies.append(body)
+
+    def generate_report(self):
+        report = "# Generated Celestial Bodies\n\n"
+        for i, body in enumerate(self.generated_bodies):
+            report += f"## Body {i+1}\n"
+            report += f"- Mass: {body['mass']} kg\n"
+            report += f"- Radius: {body['radius']} meters\n"
+            report += f"- Position: {body['position']}\n\n"
+        return report
+
+# Example usage
+generator = CelestialBodyGenerator()
+generator.create_bodies(5)
+report = generator.generate_report()
+print(report)
+```
+
+The above code defines a `CelestialBodyGenerator` class that can create random celestial bodies with specified characteristics such as mass, radius, and position. The `create_bodies` method generates a specified number of bodies with random values within given ranges. The details of the generated bodies are stored in a list. The `generate_report` method generates a markdown report with the details of the generated bodies. Each body is represented by a section in the report, including its mass, radius, and position.
+
+To use this class, you can create an instance of `CelestialBodyGenerator`, call the `create_bodies` method to generate a desired number of bodies, and then call the `generate_report` method to obtain the markdown report.
