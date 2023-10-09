@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
 This Python script fetches astronomical data from a public API, processes it, and generates a markdown report summarizing the latest discoveries in the universe. The `fetch_data` function retrieves the data from the API, the `process_data` function extracts the relevant information from the fetched data, and the `generate_markdown_report` function creates a markdown report with sections for each discovery. Finally, the `save_report` function saves the generated report to a file named `latest_discoveries.md`. To execute the script, simply run it in a Python environment.
 
-# Markdown Generator 
+# Markdown Table Generator 
 
 ```python
 def generate_markdown_table(celestial_objects):
