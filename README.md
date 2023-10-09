@@ -240,3 +240,64 @@ report = generate_report(data, model)
 ```
 
 Please note that the code provided is a template and may need to be adapted to your specific use case, such as replacing `fetch_astronomical_data()` with the appropriate function to retrieve your astronomical data. Additionally, you will need to provide the path to the actual cluster visualization image in the `generate_report()` function.
+
+# Calculate Distance
+
+```python
+import math
+
+def calculate_distance(body1, body2):
+    """Calculate the distance between two celestial bodies."""
+    x1, y1 = body1["position"]
+    x2, y2 = body2["position"]
+    distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    return distance
+
+def calculate_distances(celestial_bodies):
+    """Calculate the distances between celestial objects."""
+    distances = []
+    for i in range(len(celestial_bodies)):
+        row = []
+        for j in range(len(celestial_bodies)):
+            if i == j:
+                row.append(0.0)
+            else:
+                distance = calculate_distance(celestial_bodies[i], celestial_bodies[j])
+                row.append(distance)
+        distances.append(row)
+
+    return distances
+
+def generate_markdown_table(distances):
+    """Generate a markdown table with the distances between celestial objects."""
+    markdown_table = "| Celestial Body |"
+    for i in range(len(distances)):
+        markdown_table += f" Body {i+1} |"
+    markdown_table += "\n| --- |"
+    for _ in range(len(distances)):
+        markdown_table += " --- |"
+    markdown_table += "\n"
+    for i in range(len(distances)):
+        markdown_table += f"| Body {i+1} |"
+        for j in range(len(distances)):
+            markdown_table += f" {distances[i][j]:.2f} |"
+        markdown_table += "\n"
+
+    return markdown_table
+
+# Example usage
+celestial_bodies = [
+    {"position": (0, 0)},
+    {"position": (3, 4)},
+    {"position": (6, 8)},
+    {"position": (9, 12)}
+]
+
+distances = calculate_distances(celestial_bodies)
+markdown_table = generate_markdown_table(distances)
+print(markdown_table)
+```
+
+The code above defines a Python function `calculate_distance` that calculates the distance between two celestial bodies based on their positions. It then defines another function `calculate_distances` that calculates the distances between each pair of celestial bodies in a given list. Finally, it defines a function `generate_markdown_table` that generates a markdown table with the distances.
+
+To use the code, you can provide a list of celestial bodies with their positions to the `calculate_distances` function. It will return a 2D list of distances. You can then pass this list to the `generate_markdown_table` function to obtain a markdown table representation of the distances.
