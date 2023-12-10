@@ -10,7 +10,7 @@ Merging AI and human consciousness to explore the depths of the universe.
 - [Contributor Guide](#contributor-guide)
 - [Tutorials](#tutorials)
 - [Roadmap](#roadmap) 
-- [Aknowledgement](#aknowledgement.md) 
+- [Aknowledgement](aknowledgement.md) 
 
 # Description 
 
