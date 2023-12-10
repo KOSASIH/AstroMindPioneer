@@ -6,7 +6,9 @@ Merging AI and human consciousness to explore the depths of the universe.
 - [Description](#description)
 - [Vision And Mission](#vision-and-mission)
 - [Technologies](#technologies)
-- [Problems To Solve](#problems-to-solve) 
+- [Problems To Solve](#problems-to-solve)
+- [Contributor Guide](#contributor-guide)
+- [Tutorials](#tutorials) 
 
 # Description 
 
@@ -64,7 +66,83 @@ AstroMindPioneer is dedicated to addressing key challenges at the intersection o
 
 Addressing these challenges will propel AstroMindPioneer towards a future where the fusion of AI and human consciousness revolutionizes our understanding of the universe while upholding ethical standards and societal well-being.
 
-# Guide 
+# Contributor Guide 
+
+**Contributor Guide for AstroMindPioneer GitHub Repository**
+
+### Welcome Contributors!
+
+Thank you for considering contributing to AstroMindPioneer. Your efforts play a vital role in advancing our mission of merging AI and human consciousness for cosmic exploration. To ensure a smooth collaboration, please follow this guide:
+
+#### Getting Started:
+
+1. **Fork the Repository:**
+   - Click on the "Fork" button at the top right corner of the repository to create your copy.
+
+2. **Clone the Repository:**
+   - Clone the forked repository to your local machine:
+     ```
+     git clone https://github.com/your-username/AstroMindPioneer.git
+     cd AstroMindPioneer
+     ```
+
+3. **Create a Branch:**
+   - Create a new branch for your contributions:
+     ```
+     git checkout -b feature/your-feature
+     ```
+
+#### Making Changes:
+
+4. **Code and Test:**
+   - Make your changes and ensure they are well-tested.
+
+5. **Follow Coding Standards:**
+   - Adhere to the existing coding standards and style guide.
+
+6. **Commit Changes:**
+   - Commit your changes with a clear and concise commit message:
+     ```
+     git commit -m "Add your meaningful message here"
+     ```
+
+7. **Push Changes:**
+   - Push your changes to your forked repository:
+     ```
+     git push origin feature/your-feature
+     ```
+
+#### Submitting Changes:
+
+8. **Create Pull Request:**
+   - Go to your fork on GitHub and create a pull request.
+   - Provide a descriptive title and summary of your changes.
+
+9. **Review Process:**
+   - Your pull request will undergo review. Be responsive to feedback and make necessary adjustments.
+
+10. **Merge:**
+    - Once approved, your changes will be merged into the main repository.
+
+### Community Guidelines:
+
+- **Be Respectful:**
+  - Treat others with respect and kindness.
+
+- **Ask for Help:**
+  - If you're stuck or need clarification, don't hesitate to ask for help.
+
+- **Contribute Constructively:**
+  - Your contributions should align with the project's goals and mission.
+
+- **Documentation:**
+  - If applicable, update documentation to reflect your changes.
+
+### Thank You!
+
+Your contributions are invaluable to AstroMindPioneer's success. Together, let's explore the universe at the intersection of AI and human consciousness!
+
+# Tutorials
 
 ```python
 import requests
