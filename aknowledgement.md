@@ -20,7 +20,7 @@ AstroMindPioneer is not just a project; it's a collaborative journey, and your c
 
 Sincerely,
 
-[KOSASIH](
+[KOSASIH](https://www.linkedin.com/in/kosasih-81b46b5a) 
 
 
 The AstroMindPioneer Team
