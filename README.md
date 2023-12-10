@@ -8,7 +8,9 @@ Merging AI and human consciousness to explore the depths of the universe.
 - [Technologies](#technologies)
 - [Problems To Solve](#problems-to-solve)
 - [Contributor Guide](#contributor-guide)
-- [Tutorials](#tutorials) 
+- [Tutorials](#tutorials)
+- [Roadmap](#roadmap) 
+- [Aknowledgement](#aknowledgement.md) 
 
 # Description 
 
