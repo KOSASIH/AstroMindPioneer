@@ -82,7 +82,7 @@ Thank you for considering contributing to AstroMindPioneer. Your efforts play a 
 2. **Clone the Repository:**
    - Clone the forked repository to your local machine:
      ```
-     git clone https://github.com/your-username/AstroMindPioneer.git
+     git clone https://github.com/KOSASIH/AstroMindPioneer.git
      cd AstroMindPioneer
      ```
 
